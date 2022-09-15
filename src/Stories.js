@@ -18,7 +18,7 @@ import { useGlobalContext } from "./Context";
             {hits.map((curPost) => { 
                 const { title, author, objectID, url, num_comments } = curPost;
                 return (
-                
+                // eslint-disable-next-line
                  <div className="card" key={objectID}>
                     <h2>{title}</h2>
                     <p>  
@@ -28,8 +28,7 @@ import { useGlobalContext } from "./Context";
                         <a href={url} target='blank'>
                             Read More
                         </a>
-                        
-                        <a href="#" onClick={() => removePost(objectID)} >Remove</a>
+                        <a href="###" onClick={() => removePost(objectID)} >Remove</a>
                     </div>
                  </div>
             
